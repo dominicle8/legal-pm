@@ -1,0 +1,162 @@
+/* import bootstrap to set changes */
+/* make the customizations */
+$primary: #22345e;
+$secondary: #145796;
+$offcanvas-horizontal-width: 300px !important;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import url('https://fonts.googleapis.com/css?family=Inter:regular%7CInter:500%7CInter:600%7CInter:700%7CMerriweather:600%7CMerriweather:700');
+
+$headings-font-family: "Merriweather", serif; //"petrona", serif;
+$font-family-sans-serif: "Inter", sans-serif;
+
+.lead-lg {
+	@extend .lead;
+	font-size: $lead-font-size * 2 !important;
+}
+
+h1 {
+	font-weight: bold !important;
+}
+
+.primary-bg {
+	background-color: white !important;
+	color: $primary !important;
+}
+
+.narrow {
+	max-width: 1128px;
+	margin: auto !important;
+}
+
+.feature-logo {
+	width: 60px;
+	padding: .75em;
+}
+
+.card-title {
+	font-size: 24px !important;
+	font-weight: bold !important;
+}
+
+.card-text {
+	font-size: 16px !important;
+	font-weight: 400 !important;
+	color: #626c84 !important;
+	line-height: 1.625 !important;
+	padding-top: .75em;
+	padding-bottom: .75em;
+}
+
+.card-button {
+	font-size: 16px !important;
+	font-weight: 600 !important;
+	line-height: 1.5 !important;
+	padding: 12px 24px 12px 24px !important;
+}
+
+nav {
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-up(md) {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		align-items: center !important;
+		display: flex !important;
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(xxl) {
+	}
+}
+
+nav .navbar-nav a {
+	color: #0a2b4a;
+	&:hover {
+		color: #145796;
+	}
+	&.active:hover {
+		color: #145796;
+	}
+	
+	@include media-breakpoint-up(xl) {
+		font-size: x-large;
+	}
+}
+
+
+.navbar-nav {
+	.nav-link.active {
+		color: $primary !important;
+	}
+	/*
+	.nav-item {
+		@include media-breakpoint-up(md) {
+			display: flex !important;
+			align-items: center !important;
+			a {
+				&:hover {
+					color: #FFC107;
+				}
+			}
+			&:hover {
+				background: black !important;
+			}
+			height: 100% !important;
+		}
+	}
+
+	.dropdown-menu {
+		@include media-breakpoint-up(md) {
+			border-radius: 0 !important;
+			border: 0 !important;
+			margin: 0 !important;
+			padding: 0 !important;
+		}
+	}
+	*/
+/*
+	.dropdown-item {
+		background: white !important;
+		color: black !important;
+		&.active {
+			background: white !important;
+			color: black !important;
+		}
+
+		@include media-breakpoint-up(md) {
+			background: black !important;
+			color: white !important;
+			&:hover {
+				color: #FFC107 !important;
+			}
+			&.active {
+				background: black !important;
+				color: white !important;
+				&:hover {
+					color: #FFC107 !important;
+				}
+			}
+		}
+	}
+*/
+
+}
+
+.dropdown-toggle::after {
+	display: none !important;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar-brand {
+	font-family: "petrona", serif;
+	@include media-breakpoint-up(xl) {
+		font-size: xx-large;
+	}
+}
