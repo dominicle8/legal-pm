@@ -59,10 +59,6 @@ function Navigation() {
 							</Nav.Link>
 						</LinkContainer>
 					</Nav>
-					<Nav className="ma-auto">
-						<Link className='navbar-item-padding navbar-hover navbar-hover nav-link' to="/#team" onClick={forceNavigation}>Our Team</Link>
-						<Nav.Link href="#feedback" className="navbar-hover">Your Thoughts</Nav.Link>
-					</Nav>
 				</Offcanvas.Body>
 
 			</Navbar.Offcanvas>
