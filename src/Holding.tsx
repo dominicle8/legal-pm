@@ -1,4 +1,4 @@
-import { Button, Card, Col, Container, Row, Image } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 function Holding() {
 	return (

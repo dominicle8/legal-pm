@@ -1,35 +1,17 @@
 import { Image, Nav, Navbar, Offcanvas} from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
-import { type MouseEvent, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import LegalLogo from './static/images/legal_logo.png'
 
 function Navigation() {
 	const navigate = useNavigate();
-	const [show, setShow] = useState(false);
-	const showDropdown = () => {
-		setShow(true);
-	}
-	const hideDropdown = () => {
-		setShow(false);
-	}
 
-	const onClick = (ev : MouseEvent<HTMLElement>) => {
-		console.log("click")
-		let element = ev.target as HTMLElement;
-		if(element.id === "basic-nav-dropdown"){
-			navigate('/#pillars');
-		}
-		if(!isMobile){
-			setShow(false);
-		} else {
-		}
-	}
 	const forceNavigation = () => {
 		navigate('/#team');
 	}
 
-	const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
+	const [, setIsMobile] = useState(window.innerWidth < 768)
 	
 	const handleResize = () => {
 		if (window.innerWidth < 768) {

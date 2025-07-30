@@ -1,9 +1,6 @@
 import Navigation from './Navigation';
 import Content from './Content';
-import { Container } from 'react-bootstrap';
-import PillarsPage from './PillarsPage';
-import React, { useEffect } from 'react';
-import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import ScrollToTop from './components/ScrollToTop';
 import Takedown from './Takedown';
 import Holding from './Holding';
