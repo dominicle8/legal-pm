@@ -1,15 +1,16 @@
 import { Image, Nav, Navbar, Offcanvas} from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap'
-import { Link, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import LegalLogo from './static/images/legal_logo.png'
 
 function Navigation() {
+	/*
 	const navigate = useNavigate();
 
 	const forceNavigation = () => {
 		navigate('/#team');
 	}
+	*/
 
 	const [, setIsMobile] = useState(window.innerWidth < 768)
 	
